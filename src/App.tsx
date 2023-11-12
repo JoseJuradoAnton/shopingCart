@@ -1,0 +1,25 @@
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Store from "./pages/Store";
+import About from "./pages/About";
+import Navbar from "./Components/Navbar";
+import {ShoppingCartProvider} from "./context/ShoppingCartContext";
+
+const App = () => {
+  return (
+    <ShoppingCartProvider>
+      <BrowserRouter>
+        <div className="container blockquote">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Store" element={<Store />} />
+            <Route path="/About" element={<About />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </ShoppingCartProvider>
+  );
+};
+
+export default App;

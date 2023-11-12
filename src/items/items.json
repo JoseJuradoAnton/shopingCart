@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Cooler",
+    "price": 10.99,
+    "imgUrl": "/src/assets/cooler.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Malware",
+    "price": 23.45,
+    "imgUrl": "/src/assets/malware-hack.jpg"
+  },
+  {
+    "id": 3,
+    "name": "PC",
+    "price": 100.99,
+    "imgUrl": "/src/assets/PC.jpg"
+  },
+  {
+    "id": 4,
+    "name": "VIRUS",
+    "price": 50.99,
+    "imgUrl": "/src/assets/Ransonware-hack.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Ventiladores",
+    "price": 200.99,
+    "imgUrl": "/src/assets/VentiladoresPC.jpg"
+  }
+]
