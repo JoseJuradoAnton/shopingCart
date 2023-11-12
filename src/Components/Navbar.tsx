@@ -1,6 +1,8 @@
 import {Link} from "react-router-dom";
+import useShopingCart from "../context/ShoppingCartContext";
 
 const Navbar = () => {
+  const {openCart, cartQuantity} = useShopingCart();
   return (
     <>
       <nav className="navbar me-auto  navbar-expand-lg">
@@ -14,6 +16,7 @@ const Navbar = () => {
           About
         </Link>
         <button
+          onClick={openCart}
           className="btn btn-primary rounded-circle"
           style={{
             backgroundColor: "white",
@@ -43,7 +46,7 @@ const Navbar = () => {
               right: "0",
               transform: "translate(25%,25%)",
             }}>
-            3
+            {cartQuantity}
           </div>
         </button>
       </nav>
