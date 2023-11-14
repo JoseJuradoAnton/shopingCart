@@ -3,30 +3,30 @@
     "id": 1,
     "name": "Cooler",
     "price": 10.99,
-    "imgUrl": "/src/assets/cooler.jpg"
+    "imgUrl": "https://images.pexels.com/photos/2136243/pexels-photo-2136243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "id": 2,
     "name": "Malware",
     "price": 23.45,
-    "imgUrl": "/src/assets/malware-hack.jpg"
+    "imgUrl": "https://images.pexels.com/photos/11633745/pexels-photo-11633745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "id": 3,
     "name": "PC",
     "price": 100.99,
-    "imgUrl": "/src/assets/PC.jpg"
+    "imgUrl": "https://images.pexels.com/photos/3850263/pexels-photo-3850263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "id": 4,
     "name": "VIRUS",
     "price": 50.99,
-    "imgUrl": "/src/assets/Ransonware-hack.jpg"
+    "imgUrl": "https://images.pexels.com/photos/12879648/pexels-photo-12879648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     "id": 5,
     "name": "Ventiladores",
     "price": 200.99,
-    "imgUrl": "/src/assets/VentiladoresPC.jpg"
+    "imgUrl": "https://images.pexels.com/photos/13617745/pexels-photo-13617745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ]
