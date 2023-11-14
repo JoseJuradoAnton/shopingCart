@@ -1,0 +1,23 @@
+.cartTab {
+  width: 400px;
+  background-color: #353432;
+  color: #eee;
+  position: fixed;
+  inset: 0 -400px 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body.showCart .cartTab {
+  inset: 0 0 0 auto;
+}
+.cartTab h1 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+}
+.cartTab .btn button {
+  background-color: #e8bc0e;
+  border: none;
+  font-family: Poppins;
+}

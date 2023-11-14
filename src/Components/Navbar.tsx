@@ -3,6 +3,7 @@ import useShopingCart from "../context/ShoppingCartContext";
 
 const Navbar = () => {
   const {openCart, cartQuantity} = useShopingCart();
+
   return (
     <>
       <nav className="navbar me-auto  navbar-expand-lg">
