@@ -13,8 +13,8 @@ const App = () => {
         <div className="container blockquote">
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Store" element={<Store />} />
+            <Route path="/" element={<Store />} />
+            <Route path="/Store" element={<Home />} />
             <Route path="/About" element={<About />} />
           </Routes>
         </div>

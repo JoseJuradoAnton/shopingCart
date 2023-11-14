@@ -1,29 +1,19 @@
+import {Offcanvas} from "react-bootstrap";
 import useShopingCart from "../context/ShoppingCartContext";
 
 type ShoppingCartProps = {
   isOpen: boolean;
 };
 
-const ShopingCart = ({}: ShoppingCartProps) => {
-  const {} = useShopingCart();
-
-  const cartTab = document.querySelector("svg");
-  const body = document.querySelector("body");
-
-  cartTab?.addEventListener("click", () => {
-    body?.classList.toggle("showCart");
-    console.log(cartTab);
-  });
+const ShopingCart = ({isOpen}: ShoppingCartProps) => {
+  const {closeCart} = useShopingCart();
 
   return (
-    <div className="cartTab">
-      <h1>Cart</h1>
-
-      <div className="btn">
-        <button className="close">Close</button>
-        <button className="checkOut">CHECK Out</button>
-      </div>
-    </div>
+    <Offcanvas show={isOpen} onHide={closeCart} placement="end">
+      <Offcanvas.Header closeButton>
+        <Offcanvas.Title>Cart</Offcanvas.Title>
+      </Offcanvas.Header>
+    </Offcanvas>
   );
 };
 

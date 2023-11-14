@@ -23,7 +23,7 @@ type ShoppingCartContext = {
 
 const ShoppingCartContext = createContext({} as ShoppingCartContext);
 
-const useShopingCart = () => {
+export const useShopingCart = () => {
   return useContext(ShoppingCartContext);
 };
 
@@ -38,8 +38,8 @@ export function ShoppingCartProvider({
     0
   );
 
-  const openCart = () => setIsOpen(false);
-  const closeCart = () => setIsOpen(true);
+  const openCart = () => setIsOpen(true);
+  const closeCart = () => setIsOpen(false);
 
   function getItemQuantity(id: number) {
     return cartItems.find((item) => item.id === id)?.quantity || 0;
