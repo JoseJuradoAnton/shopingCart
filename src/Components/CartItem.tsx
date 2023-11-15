@@ -1,4 +1,4 @@
-import {Stack} from "react-bootstrap";
+import {Button, Stack} from "react-bootstrap";
 import {useShopingCart} from "../context/ShoppingCartContext";
 import StoreItem from "../items/items.json";
 import formatCurrency from "../util/formatCurrency";
@@ -31,12 +31,16 @@ export const CartItem = ({id, quantity}: CartItemProps) => {
           )}
         </div>
         <div className="text-muted" style={{fontSize: ".75rem"}}>
-          {" "}
-          {formatCurrency(item.price)}{" "}
+          {formatCurrency(item.price)}
         </div>
-        <div>{formatCurrency(item.price * quantity)}</div>
-        <button>X</button>
       </div>
+      <div>{item.price * quantity}</div>
+      <Button
+        variant="outline-danger"
+        size="sm"
+        onClick={() => removeFromcart(item.id)}>
+        &times;
+      </Button>
     </Stack>
   );
 };
